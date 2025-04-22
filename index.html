@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Express Bites</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Express Bites</h1>
+    <p>Delicious food delivered fresh to your doorstep</p>
+  </header>
+
+  <main class="food-grid">
+    <div class="food-card">
+        <img src="paneer-tikka.jpg" alt="Paneer Tikka" width="250">
+        <h2>Paneer Tikka</h2>
+        <p>Sold by: Unit</p>
+        <p class="price">₹150</p>
+        <button onclick="addToCart(this)" data-name="Paneer Tikka" data-price="150">Order Now</button>
+      </div>
+
+      <div class="food-card">
+        <img src="veg-biryani.jpg" alt="veg biryani" width="250">
+        <h2>veg biryani</h2>
+        <p>Sold by: Unit</p>
+        <p class="price">250</p>
+        <button onclick="addToCart(this)" data-name="veg biryani" data-price="250">Order Now</button>
+      </div>
+
+      <div class="food-card">
+        <img src="gulab-jamun.jpg" alt="gulab jamun" width="250">
+        <h2>gulab jamun</h2>
+        <p>Sold by: pound</p>
+        <p class="price">180</p>
+        <button onclick="addToCart(this)" data-name="gulab jamun" data-price="180">Order Now</button>
+      </div>
+      
+  </main>
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div id="total-section" style="margin-top: 20px; text-align: center;">
+        <h3>Total Bill: ₹<span id="total-amount">0</span></h3>
+        <button onclick="payNow()">Pay Now</button>
+      </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Siddhanuja’s Express Bites. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
